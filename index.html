@@ -7,31 +7,33 @@
 </head>
 
 <body>
- <div class="body">
-  <div id="display"></div>
-  <div class="row">
-   <button type="button" onclick="operation(event)">7</button>
-   <button type="button" onclick="operation(event)">8</button>
-   <button type="button" onclick="operation(event)">9</button>
-   <button class="operation" type="button" onclick="operation(event)">+</button>
-  </div>
-  <div class="row">
-   <button type="button" onclick="operation(event)">4</button>
-   <button type="button" onclick="operation(event)">5</button>
-   <button type="button" onclick="operation(event)">6</button>
-   <button class="operation" type="button" onclick="operation(event)">-</button>
-  </div>
-  <div class="row">
-   <button type="button" onclick="operation(event)">1</button>
-   <button type="button" onclick="operation(event)">2</button>
-   <button type="button" onclick="operation(event)">3</button>
-   <button class="operation" type="button" onclick="operation(event)">*</button>
-  </div>
-  <div class="row">
-   <button class="clear" type="button" onclick="operation(event)">C</button>
-   <button type="button" onclick="operation(event)">0</button>
-   <button class="operation" type="button" onclick="operation(event)">=</button>
-   <button class="operation" type="button" onclick="operation(event)">/</button>
+ <div class="outer">
+  <div class="calc">
+   <input type="text" id="display" />
+   <div class="row">
+    <button type="button" onclick="read('7')">7</button>
+    <button type="button" onclick="read('8')">8</button>
+    <button type="button" onclick="read('9')">9</button>
+    <button class="operation" type="button" onclick="read('+')">+</button>
+   </div>
+   <div class="row">
+    <button type="button" onclick="read('4')">4</button>
+    <button type="button" onclick="read('5')">5</button>
+    <button type="button" onclick="read('6')">6</button>
+    <button class="operation" type="button" onclick="read('-')">-</button>
+   </div>
+   <div class="row">
+    <button type="button" onclick="read('1')">1</button>
+    <button type="button" onclick="read('2')">2</button>
+    <button type="button" onclick="read('3')">3</button>
+    <button class="operation" type="button" onclick="read('*')">*</button>
+   </div>
+   <div class="row">
+    <button class="clear" type="button" onclick="read('C')">C</button>
+    <button type="button" onclick="read('0')">0</button>
+    <button class="operation" type="button" onclick="read('=')">=</button>
+    <button class="operation" type="button" onclick="read('/')">/</button>
+   </div>
   </div>
  </div>
  <script src="script.js"></script>
